@@ -1,0 +1,28 @@
+.tooltip-container {
+  .content-container {
+    @extend .is-flex-column-center;
+  }
+
+  .image {
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .markdown-body {
+    color: white;
+
+    ::v-deep h3 {
+      color: white;
+      margin-bottom: 0px;
+    }
+  }
+
+  .ant-tooltip-inner {
+    min-width: 600px;
+    max-height: 700px;
+    padding: 15px;
+
+    overflow: auto;
+  }
+}
