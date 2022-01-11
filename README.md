@@ -1,29 +1,6 @@
-# front-end-code-challenge-vue
+### 前端代码小挑战
 
-## Project setup
-```
-npm install
-```
+里面包含了一些从知乎等地方搜集来的前端项目小挑战。
+在具体项目详情页可以看到具体的挑战题目。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+为了在摸鱼中充实自己而立的小项目。
