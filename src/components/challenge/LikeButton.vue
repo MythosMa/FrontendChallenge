@@ -13,6 +13,7 @@
 export default {
   data() {
     return {
+      animationStep: 0,
       isClick: false,
     };
   },
