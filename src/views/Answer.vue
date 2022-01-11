@@ -8,12 +8,10 @@
       v-if="challengeData.tipInfo"
       :tipInfo="challengeData.tipInfo"
     />
-    <Icon
-      type="left-circle"
-      class="back"
-      :style="{ fontSize: '30px' }"
-      @click="back"
-    />
+    <div>
+      <Icon type="left-circle" :style="{ fontSize: '30px' }" @click="back" />
+    </div>
+
     <div class="component">
       <component v-bind:is="challengeData.component" />
     </div>
