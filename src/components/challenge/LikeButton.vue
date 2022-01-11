@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div :class="'heart' + (isClick ? ' heart-is-click' : '')" @click="click">
+    <div :class="'heart' + animationList[animationStep]" @click="click">
       <div class="heart-left" />
       <div class="heart-right" />
       <div class="heart-square" />
@@ -14,12 +14,20 @@ export default {
   data() {
     return {
       animationStep: 0,
-      isClick: false,
+      animationList: ["", " heart-is-click"],
     };
   },
   methods: {
     click() {
-      this.isClick = !this.isClick;
+      if (
+        this.animationStep === 0 ||
+        this.animationStep === this.animationList.length - 1
+      ) {
+        this.animationStep =
+          ++this.animationStep >= this.animationList.length
+            ? 0
+            : this.animationStep;
+      }
     },
   },
 };
