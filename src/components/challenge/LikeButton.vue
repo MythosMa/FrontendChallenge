@@ -213,7 +213,6 @@ export default {
   @extend .is-flex-column-center;
   width: 100%;
   height: 100%;
-  background-color: aqua;
   box-sizing: border-box;
 
   .circle-test {
